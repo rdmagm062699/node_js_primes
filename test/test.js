@@ -20,3 +20,11 @@ describe('prime factor of 1', function () {
         expect(actual).to.be.empty
     })
 })
+
+describe('prime factor of 2', function () {
+    it('should be a list containg 2', function () {
+        actual = primeFactors.generate(2)
+
+        expect(actual).to.eql([2])
+    })
+})
