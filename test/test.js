@@ -60,3 +60,19 @@ describe('prime factor of 9', function () {
         expect(actual).to.eql([3, 3])
     })
 })
+
+describe('prime factor of 15', function () {
+    it('should be a list containg 3, 5', function () {
+        actual = primeFactors.generate(15)
+
+        expect(actual).to.eql([3, 5])
+    })
+})
+
+describe('prime factor of 126', function () {
+    it('should be a list containg 2, 3, 3, 7', function () {
+        actual = primeFactors.generate(126)
+
+        expect(actual).to.eql([2, 3, 3, 7])
+    })
+})
