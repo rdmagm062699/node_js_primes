@@ -3,10 +3,15 @@ module.exports = {
     generate: function(number) {
         primes = []
         
-        while (number % 2 == 0)
+        prime = 2
+        while (prime < number)
         {
-            primes.push(2)
-            number = number / 2
+            while (number % prime == 0)
+            {
+                primes.push(prime)
+                number = number / prime
+            }
+            prime++
         }
 
         if (number > 1) {
