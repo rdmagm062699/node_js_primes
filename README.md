@@ -1,3 +1,3 @@
-Prime factors kata in Node.js
+## Prime factors kata in Node.js
 
 To run tests:  `npm test`
